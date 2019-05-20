@@ -1,0 +1,12 @@
+---
+MyPage:
+  dec: 我的页面
+  locators:
+    -
+      name: 我的
+      type: id
+      value: com.zhongduomei.rrmj.society:id/rl_my
+    -
+      name: 头像
+      type: id
+      value: com.zhongduomei.rrmj.society:id/sdv_head_login

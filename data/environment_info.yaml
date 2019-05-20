@@ -1,0 +1,13 @@
+!EnvironmentInfo
+apk: E:\study\TEST/apk/Test_Replace_V4.1.6_debug.apk
+app_activity: com.zhongduomei.rrmj.society.function.launch.activity.LaunchActivity
+app_package: com.zhongduomei.rrmj.society
+appium: ''
+devices:
+- !DeviceInfo
+  device_name: 32e784340704
+  platform_name: Android
+  platform_version: 7.1.2
+html_report: E:\study\TEST/report/html_2019-05-20-17-42-49
+pages_yaml: E:\study\TEST/page/yaml
+xml_report: E:\study\TEST/report/xml_2019-05-20-17-42-49
