@@ -2,6 +2,7 @@
 __author__ = 'Mio4kon'
 from utils.shell import Shell
 from utils import L
+import datetime
 
 
 class Device:
@@ -14,6 +15,10 @@ class Device:
                 android_devices_list.append(device)
         return android_devices_list
 
+class UUID:
+    @staticmethod
+    def get_uuid():
+        return datetime.datetime.now().strftime('%Y-%m-%d-%H-%M-%S')
 
 if __name__ == '__main__':
     devices = Device.get_android_devices()

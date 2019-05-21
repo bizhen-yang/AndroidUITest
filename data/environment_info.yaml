@@ -5,9 +5,9 @@ app_package: com.zhongduomei.rrmj.society
 appium: ''
 devices:
 - !DeviceInfo
-  device_name: 32e784340704
+  device_name: 1dab58af
   platform_name: Android
-  platform_version: 7.1.2
-html_report: E:\study\TEST/report/html_2019-05-20-17-42-49
+  platform_version: 7.1.1
+html_report: E:\study\TEST/report/html_2019-05-21-11-16-09
 pages_yaml: E:\study\TEST/page/yaml
-xml_report: E:\study\TEST/report/xml_2019-05-20-17-42-49
+xml_report: E:\study\TEST/report/xml_2019-05-21-11-16-09

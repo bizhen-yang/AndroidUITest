@@ -8,7 +8,7 @@ from utils import L
 from exception.exceptions import *
 from appium.webdriver.common.touch_action import TouchAction
 from selenium.common.exceptions import TimeoutException
-
+from utils.tools import UUID
 
 def singleton(class_):
     instances = {}
@@ -196,6 +196,7 @@ class ElementActions:
             else:
                 return self._find_text_in_page(text)
         except TimeoutException:
+            pytest.allure.attach(get_uuid(),    action.get_screenshot_as_png(), type=AttachmentType.PNG)
             L.w("[Text]页面中未找到 %s 文本" % text)
             if is_raise:
                 raise NotFoundTextError
