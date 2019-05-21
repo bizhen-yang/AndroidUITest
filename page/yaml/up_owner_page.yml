@@ -1,0 +1,8 @@
+---
+UpOwnerPage:
+  dec: Up主详情页
+  locators:
+    -
+      name: 编辑
+      type: id
+      value: com.zhongduomei.rrmj.society:id/tv_edit

@@ -10,3 +10,8 @@ MyPage:
       name: 头像
       type: id
       value: com.zhongduomei.rrmj.society:id/sdv_head_login
+      
+    -
+      name: 已登录头像
+      type: id
+      value: com.zhongduomei.rrmj.society:id/sdv_head      

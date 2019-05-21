@@ -23,7 +23,6 @@ class TestLogin:
     def test_rrtv_login(self, action: ElementActions):
         L.d('rrtv login')
         account = Steps.get_account()
-        action=ElementActions()
         action.click(MyPage.我的)
         action.click(MyPage.头像)
         action.click(LoginPage.账号密码登录)		

@@ -25,6 +25,10 @@ class LoginPage:
 class MyPage:
     我的 = get_locater("MyPage", '我的')
     头像 = get_locater('MyPage', '头像')
+    已登录头像 = get_locater('MyPage','已登录头像')
+	
+class UpOwnerPage:
+    编辑 = get_locater("UpOwnerPage", '编辑')
     
 	
 
