@@ -30,6 +30,7 @@ class MyPage:
 class UpOwnerPage:
     编辑 = get_locater("UpOwnerPage", '编辑')
     
+    
 	
 
     

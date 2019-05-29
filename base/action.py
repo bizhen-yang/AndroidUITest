@@ -219,8 +219,11 @@ class ElementActions:
         else:
             el = self._get_element_by_type(self.driver, locator)
             return el.is_displayed()
+			
     def get_screenshot_as_png(self):
         return self.driver.get_screenshot_as_png()
+
+ 
     # ======================= private ====================
 
     def _find_text_in_page(self, text):

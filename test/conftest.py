@@ -4,6 +4,7 @@ import pytest
 from appium import webdriver
 from base.action import ElementActions
 from utils.environment import Environment
+import random
 
 
 @pytest.fixture()
@@ -19,7 +20,7 @@ def action():
                     #'automationName': 'UIAutomator2',
                     'noSign': True,
                     'noReset': True,
-                    'systemPort':4823
+                    'systemPort': random.randint(4700, 4900)
                     }
     host = "http://localhost:4723/wd/hub"
     driver = webdriver.Remote(host, capabilities)
@@ -37,12 +38,12 @@ def action2():
                     'clearSystemFiles': True,
                     'appActivity': env.app_activity,
                     'appPackage': env.app_package,
-                    'automationName': 'UIAutomator2',
+                    #'automationName': 'UIAutomator2',
                     'noSign': True,
                     'noReset': True,
-                    'systemPort':4823
+                    'systemPort': random.randint(4700, 4900)
                     }
-    host = "http://localhost:4723/wd/hub"
+    host = "http://localhost:4724/wd/hub"
     driver = webdriver.Remote(host, capabilities)
     yield ElementActions(driver).reset(driver)
     driver.quit()
